@@ -13,7 +13,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose a picture"/>
+        android:fontFamily="casual"
+        android:text="Choose a picture"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,11 +23,12 @@
 
         <Button
             android:id="@+id/gallery_button"
+            style="@style/Button.Primary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            style="@style/Button.Primary"
-            android:text="From gallery"/>
+            android:fontFamily="casual"
+            android:text="From gallery" />
 
         <Button
             android:id="@+id/camera_button"
@@ -72,13 +75,47 @@
             android:textColor="@android:color/white"
             android:background="@android:color/transparent"
             android:layout_alignBottom="@id/image_thumbnail"/>
+
+
     </RelativeLayout>
 
     <Button
         android:id="@+id/save_button"
+        style="@style/Button.Primary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save"
-        style="@style/Button.Primary"/>
+        android:text="Save" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <Button
+            android:id="@+id/blue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="blue text" />
+
+        <Button
+            android:id="@+id/red_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="red text" />
+
+        <Button
+
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="white text" />
+
+        <Button
+            android:id="@+id/pink_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pink text" />
+    </LinearLayout>
+
 
 </LinearLayout>
